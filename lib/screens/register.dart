@@ -14,7 +14,7 @@ class Register extends StatelessWidget {
       child: Scaffold(
         body: Stack(
           fit: StackFit.loose,
-          children: [
+          children:[
             Positioned(
                 top: 7.8 * 965.3 / 731,
                 child: Container(
