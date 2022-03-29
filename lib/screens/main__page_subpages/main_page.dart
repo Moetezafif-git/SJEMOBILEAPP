@@ -1,4 +1,4 @@
-// page where all created/assigned tasks will show up,
+  // page where all created/assigned tasks will show up,
 // a search bar and some filters exist to help users find relevent content.
 // tasks are organized by completion status into tabs.
 // users are able to browse avaible tasks, use filters, move to different
@@ -41,8 +41,8 @@ class _MainPageState extends State<MainPage> {
                 accountEmail: Text('junior.entreprise@supcom.tn', style: TextStyle(fontSize: 15, fontWeight: FontWeight.w400)),
                 decoration: BoxDecoration(
                   image: DecorationImage(
-                      image: AssetImage('assets/drawer_decoration.jpg'),
-                      fit: BoxFit.fill
+                    image: AssetImage('assets/drawer_decoration.jpg'),
+                    fit: BoxFit.fill
                   ),
                 ),
               ),
@@ -73,9 +73,9 @@ class _MainPageState extends State<MainPage> {
               ),
               const Divider(color: Colors.grey),
               ListTile(
-                leading: const Icon(IconData(0xf522, fontFamily: 'MaterialIcons'), size: 25, color: Colors.black,),
-                title: const Text('Profile', style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
-                onTap: (){ Navigator.pushNamed(context, 'profile');},
+                leading: const Icon(Icons.event, size: 25, color: Colors.black,),
+                title: const Text('Events', style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
+                onTap: (){},
               ),
               const SizedBox(height: 280),
               Row(
@@ -88,7 +88,7 @@ class _MainPageState extends State<MainPage> {
               )
             ],
           ),
-
+          
         ),
         bottomNavigationBar: BottomNavigationBar(
           unselectedItemColor: Colors.blueGrey,
@@ -96,7 +96,7 @@ class _MainPageState extends State<MainPage> {
           selectedIconTheme: const IconThemeData(color: Colors.orange, size: 40.0),
           elevation: 5,
           currentIndex: _currentSelection,
-          onTap: (index) {
+          onTap: (index) { 
             setState(() {
               _currentSelection = index;
             });

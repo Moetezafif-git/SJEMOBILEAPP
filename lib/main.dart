@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sje_mobile_app/screens/profile_page.dart';
 import 'screens/main_page.dart';
 import 'screens/register.dart';
 import 'screens/login.dart';
@@ -14,18 +15,18 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Task Manager',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      //home: Register(),
-      initialRoute: '/',
-      routes: {
-        '/': (context) => Login(),
-        'main_page': (context) => const MainPage(),
-        'register': (context) => Register(),
-      }
-    );
+        debugShowCheckedModeBanner: false,
+        title: 'Task Manager',
+        theme: ThemeData(
+          primarySwatch: Colors.blue,
+        ),
+        //home: Register(),
+        initialRoute: '/',
+        routes: {
+          '/': (context) => Login(),
+          'main_page': (context) => const MainPage(),
+          'register': (context) => Register(),
+          'profile' : (context)=> Profile()
+        });
   }
 }

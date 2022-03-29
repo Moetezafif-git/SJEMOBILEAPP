@@ -73,9 +73,9 @@ class _MainPageState extends State<MainPage> {
               ),
               const Divider(color: Colors.grey),
               ListTile(
-                leading: const Icon(IconData(0xf522, fontFamily: 'MaterialIcons'), size: 25, color: Colors.black,),
-                title: const Text('Profile', style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
-                onTap: (){ Navigator.pushNamed(context, 'profile');},
+                leading: const Icon(Icons.event, size: 25, color: Colors.black,),
+                title: const Text('Events', style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
+                onTap: (){},
               ),
               const SizedBox(height: 280),
               Row(
